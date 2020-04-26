@@ -18,7 +18,7 @@ This application demos use of Kafka to create a scalable chat server.
 Postman collection is present in the root folder with basic APIs. You can import it in your postman.
 
 ### Usage ###
-1. Create Users ` Use _Add User_ Api from Postman Collection` 
+1. Create Users ` Use Add User Api from Postman Collection` 
 2. Login with a user(sender) and note the Auth Token
 3. Login with receiver users and note their auth token
 4. For testing receivers you can use `https://www.websocket.org/echo.html`. Connect on the following web socket address `ws://localhost:8080/chat?Authorization={authToken}`
