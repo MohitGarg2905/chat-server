@@ -11,7 +11,7 @@ This application demos use of Kafka to create a scalable chat server.
 
 ### Run Application ###
 * Alter mysql connection properties in _application.properties_
-* Create the database as mentioned in connection properties
+* Create the database as mentioned in connection properties. Tables would be created automatically on application start.
 * Start Kafka. In this projects default port(9092) is configured on localhost
 * Start the application either from ChatApplication class file in IDE or by building and executing the jar.
 
