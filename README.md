@@ -17,7 +17,7 @@ This application demos use of Kafka to create a scalable chat server.
 
 Postman collection is present in the root folder with basic APIs. You can import it in your postman.
 
-###Usage###
+### Usage ###
 1. Create Users ` Use _Add User_ Api from Postman Collection` 
 2. Login with a user(sender) and note the Auth Token
 3. Login with receiver users and note their auth token
@@ -26,6 +26,6 @@ Postman collection is present in the root folder with basic APIs. You can import
 6. The sent message will be received by the relevant user.
 
 
-###Enhancements###
+### Enhancements ###
 1. Different message types to be supported
 2. Save message in database and add API to be used upon login to fetch all messages.
