@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "a133f4c0-62e9-46a4-a663-1e53d406f976",
+		"name": "ChatApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/add?email=hello1@em.co&password=password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"add"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "hello1@em.co"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/login?email=hello4@em.co&password=password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "hello4@em.co"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Chat Message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "1b355d95-6c19-44f7-8fe6-d232be7d8fe6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"toUserId\":1,\n\t\"message\":\"Hi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/chat/send",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
